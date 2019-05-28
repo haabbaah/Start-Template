@@ -1,0 +1,72 @@
+
+/** Custom styles for gallery sliding*/
+
+.sliding_gallery figure,
+.zooming figure {
+	margin: 0;
+}
+
+
+/* .zooming{
+	margin: 2em 0;
+}
+
+.zooming+figcaption {
+	margin-top: -2em;
+}
+ */
+/** Custom styles for zooming*/
+
+.pswp__top-bar {
+	padding-top: 70px;
+	height: auto;
+}
+
+.pswp__counter {
+	top: 70px;
+}
+
+.zooming figcaption {
+	display: none;
+}
+
+.pswp__caption__center {
+	font-family: serif;
+	max-width: 100%;
+	font-size: 100%;
+	line-height: 1.3em;
+	text-indent: 0;
+	text-align: left;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	margin: 1em 2% 1em 2%;
+}
+
+.pswp__caption__center small {
+	font-size: 60%;
+}
+
+figcaption,
+.caption_padding,
+table,
+.dossier {
+	font-family: serif;
+	font-size: 100%;
+	line-height: 1.3em;
+	text-indent: 0;
+	text-align: left;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	padding: 0.5em 0em;
+	position: relative;
+	z-index: 100;
+	margin: 0 0 2em;
+}
+
+.caption_padding {
+	margin: 0;
+}

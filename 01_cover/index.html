@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<style>
+		html,
+		body {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: rgb(66, 68, 68);
+		}
+
+		.cover {
+			width: 100%;
+			/* удалить height, если надо добавить в низ контент */
+			height: 100vh;
+			display: flex;
+			align-items: center;
+		}
+
+		.cover .cover-img {
+			position: relative;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		@media (max-device-width: 11cm) {
+			.cover .cover-img::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: "";
+				width: 100%;
+				height: 6vw;
+				background: -webkit-linear-gradient(top, rgba(66, 68, 68, 1) 0%, rgba(66, 68, 68, 0) 100%);
+				background: linear-gradient(to bottom, rgba(66, 68, 68, 1) 0%, rgba(66, 68, 68, 0) 100%);
+			}
+
+			.cover .cover-img::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				content: "";
+				width: 100%;
+				height: 6vw;
+				background: -webkit-linear-gradient(bottom, rgba(66, 68, 68, 1) 0%, rgba(66, 68, 68, 0) 100%);
+				background: linear-gradient(to top, rgba(66, 68, 68, 1) 0%, rgba(66, 68, 68, 0) 100%);
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="cover">
+		<div class="cover-img">
+			<img src="01.jpg" alt="">
+		</div>
+	</div>
+
+
+</body>
+
+</html>
